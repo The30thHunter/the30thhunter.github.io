@@ -27,7 +27,7 @@ function comprobarArreglarNombre(nombre) {
     let valido = (regex.test(nombre))
     if (valido) {
         nombre = nombre.toLowerCase().replace(/\s+/g, "-")
-        let url = "https://cors-anywhere.herokuapp.com/https://persona-compendium.onrender.com/personas/" + nombre
+        let url = "https://cors-anywhere.herokuapp.com/"+"https://persona-compendium.onrender.com/personas/" + nombre
         return url
     }
     else {
