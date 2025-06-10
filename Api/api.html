@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="api.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona FanClub</title>
+</head>
+
+<body onload="consulta('https://persona-compendium.onrender.com/personas/jack-frost/')">
+    <ul>
+        <li><a class="active" href="../index.html">Home</a></li>
+        <li><a class="active" href="../Mision/Mision.html">Mision</a></li>
+        <li><a class="active" href="../Api/api.html">Api</a></li>
+        <li><a class="active" href="../Edad/edad.html">Calculador edad y encriptador</a></li>
+        <li><a class="active" href="../Productos/Prod.html">Productos</a></li>
+        <li><a class="active" href="../Condiciones/Term_Cond.html">Terminos y condiciones</a></li>
+        <li class="derecha"><a class="active" href="../Carro/Carro.html">Carro</a></li>
+        <li class="derecha"><img src="../fotos/atlus_logo.png" alt="Icon" style="height: 38px; padding-top: 5px;"></li>
+    </ul>
+
+    <div class="contenedor">
+        <h1>Buscador de Personas en la Persona API</h1>
+        <p>Ingrese en el buscador el nombre de una persona y presione el boton "Buscar" la persona que este buscando
+            aparecera junto con su informacion y imagen</p>
+        <div class="buscador">
+                <input type="text" id="Buscador" placeholder="Nombre de la persona">
+                <button onclick="actualizarURL()">Buscar</button>
+        </div>
+        <br>
+        <br>
+        <div id="id"></div>
+        <div id="name"></div>
+        <div id="arcana"></div>
+        <div id="description"></div>
+        <div>Imagen:</div>
+        <div><img id="image" class="imagen"></div>
+    </div>
+
+
+
+
+
+
+    <script src="api.js"></script>
+</body>
+<footer>
+    <div>
+        <a href="https://github.com/The30thHunter"><img src="https://avatars.githubusercontent.com/u/116296560?v=4"
+                alt="Github del creador" style="width: 10%; padding: 10px;"></a>
+        <a href="https://maps.app.goo.gl/UodVjKwJAEM5aUiW7"><img src="../fotos/mapa.png" alt="Ubicacion"
+                style="width: 12%; padding: 10px;"></a>
+    </div>
+    <div class="enlaces">
+        <a href="https://www.instagram.com/" style="width: 40px; padding-left: 3%; float: left;"><img
+                style="width: 100%; padding-left: 3%;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                alt="Logo Instagram"></a>
+        <a style="padding-left: 10%; padding-right: 20%;"></a>
+        <a href="https://www.facebook.com/" style="width: 40px;"><img style="width: 100%;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/960px-Facebook_logo_%28square%29.png"
+                alt="Facebook logo"></a>
+        <a style="padding-left: 10%; padding-right: 20%;"></a>
+        <a href="https://x.com/?lang=es" style="width: 40px; float: right; padding-right: 3%;"><img style="width: 100%;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1200px-Logo_of_Twitter.svg.png"
+                alt="Logo Twitter"></a>
+    </div>
+</footer>
+
+</html>

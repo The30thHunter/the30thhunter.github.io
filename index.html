@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Persona FanClub</title>
+</head>
+
+<body>
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a class="active" href="Mision/Mision.html">Mision</a></li>
+    <li><a class="active" href="Api/api.html">Api</a></li>
+    <li><a class="active" href="Edad/edad.html">Calculador edad y encriptador</a></li>
+    <li><a class="active" href="Productos/Prod.html">Productos</a></li>
+    <li><a class="active" href="Condiciones/Term_Cond.html">Terminos y condiciones</a></li>
+    <li class="derecha"><a class="active" href="Carro/Carro.html">Carro</a></li>
+    <li class="derecha"><img src="fotos/atlus_logo.png" alt="Icon" style="height: 38px; padding-top: 5px;"></li>
+  </ul>
+
+  <!--Titulo en pagina home, centrado-->
+  <h1 style="display: flex; justify-self: center;">Club de Fans de Persona</h1>
+
+  <!-- Contenedor del carrucel -->
+  <div class="slideshow-container">
+
+    <!-- Numeros y imagenes a tamaño completo, texto incluido -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img
+        src="https://image.api.playstation.com/vulcan/ap/rnd/202307/2605/19353f11f85964dd2be8eae4564a0e78b011a81824d9b4a9.png"
+        style="width:100%">
+      <div class="text">Persona 3 Reload</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img
+        src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000043147/684bd8b00abcbf6dd122727a27c01a337f667bef825f4f4662efad9854b72fd4"
+        style="width:100%">
+      <div class="text">Persona 5 Royal</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img
+        src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000060320/c0a375d02bff3def365bd98f274fd248c3d313c5f4fdd62590fed270185a9b69"
+        style="width:100%">
+      <div class="text">Persona 4 Golden</div>
+    </div>
+
+    <!-- botones de avanzar y retroceder -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- los puntos de navegacion inferior -->
+  <div style="text-align:center">
+    <span class="dots" onclick="currentSlide(1)"></span>
+    <span class="dots" onclick="currentSlide(2)"></span>
+    <span class="dots" onclick="currentSlide(3)"></span>
+  </div>
+<br><br>
+  <!--Contenedor del boton para el modal-->
+  <div class="cont_form">
+    <button id="myBtn" class="Bmodal">Inscribete</button>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="Formulario" id="Formulario">
+          <!--titulo del formulario-->
+          <h1>Incripcion del club de fans de Persona</h1>
+          <input type="text" id="nombre" name="nombre" style="float: right;" placeholder="Ingrese Nombre"
+            required><br><br>
+
+          <input type="text" id="rut" name="rut" style="float: right;" placeholder="Ingrese Rut sin puntos y con guion"
+            required><br><br>
+
+          <input type="email" id="email" name="email" style="float: right;" placeholder="Ingrese Email"
+            required><br><br>
+
+          <input type="number" id="edad" name="edad" style="float: right;" required placeholder="Ingrese Edad"><br><br>
+          <!--Contenedor de errores, aparece solo si hay errores-->
+          <span id="errores"></span>
+          <!--Este boton valida y "envia los datos para procesar"-->
+          <button type="submit" style="display: flex; justify-self: center;">Enviar</button><br>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <!--Modal-->
+  <!-- The Modal -->
+
+
+  <!--Coneccion con el javaScript-->
+  <script src="index.js"></script>
+</body>
+<!--Footer con enlace a la ubicacion y a mi github-->
+<!--note to self: agregar imagen de perfil en el enlace al github-->
+<!--Nota no se si quiero que esto este relacionado a mi github, aunque lo necesito para levantar la pagina-->
+<footer>
+  <div>
+    <a href="https://github.com/The30thHunter"><img src="https://avatars.githubusercontent.com/u/116296560?v=4" alt="Github del creador" style="width: 10%; padding: 10px;"></a>
+    <a href="https://maps.app.goo.gl/UodVjKwJAEM5aUiW7"><img src="fotos/mapa.png"
+        alt="Ubicacion" style="width: 12%; padding: 10px;"></a>
+  </div>
+  <div class="enlaces">
+        <a href="https://www.instagram.com/" style="width: 40px; padding-left: 3%; float: left;"><img
+                style="width: 100%; padding-left: 3%;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                alt="Logo Instagram"></a>
+        <a style="padding-left: 10%; padding-right: 20%;"></a>
+        <a href="https://www.facebook.com/" style="width: 40px;"><img style="width: 100%;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/960px-Facebook_logo_%28square%29.png"
+                alt="Facebook logo"></a>
+        <a style="padding-left: 10%; padding-right: 20%;"></a>
+        <a href="https://x.com/?lang=es" style="width: 40px; float: right; padding-right: 3%;"><img style="width: 100%;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1200px-Logo_of_Twitter.svg.png"
+                alt="Logo Twitter"></a>
+    </div>
+</footer>
+
+</html>

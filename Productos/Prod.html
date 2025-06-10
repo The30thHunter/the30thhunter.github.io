@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="productos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona FanClub</title>
+</head>
+
+<body>
+    <!--Barra navegacion superior-->
+    <ul>
+        <li><a class="active" href="../index.html">Home</a></li>
+        <li><a class="active" href="../Mision/Mision.html">Mision</a></li>
+        <li><a class="active" href="../Api/api.html">Api</a></li>
+        <li><a class="active" href="../Edad/edad.html">Calculador edad y encriptador</a></li>
+        <li><a class="active" href="../Productos/Prod.html">Productos</a></li>
+        <li><a class="active" href="../Condiciones/Term_Cond.html">Terminos y condiciones</a></li>
+        <li class="derecha"><a class="active" href="../Carro/Carro.html">Carro</a></li>
+        <li class="derecha"><img src="../fotos/atlus_logo.png" alt="Icon" style="height: 38px; padding-top: 5px;"></li>
+    </ul>
+    <!--Contenedor para ordenar los productos de la primera (y unica) fila-->
+    <div class="productos_1">
+        <!--Refencia al style donde se ordena en el formato tarjeta-->
+        <div class="card">
+            <img src="https://store.udonentertainment.com/cdn/shop/files/P4G_MASCOTPIN_TEDDIE.png?v=1726199944"
+                alt="Denim Jeans" style="width:100%">
+            <h1>Pin Promo P4G</h1>
+            <p class="price">$15</p>
+            <p>Pin promocional de Persona 4 Golden licenciado de Atlus, distribuido por UDON</p>
+        </div>
+        <!--Refencia al style donde se ordena en el formato tarjeta-->
+        <div class="card">
+            <img src="https://totalcards.net/cdn/shop/files/Persona5-RoyalPin.webp?v=1714732649&width=535" alt="Pin P5R"
+                style="width:100%">
+            <h1 id="Nombre">Pin Promo P5R</h1>
+            <p class="price" id="Precio">$19</p>
+            <p>Pin promocional de Persona 5 Royal licenciado de Atlus</p>
+        </div>
+        <!--Refencia al style donde se ordena en el formato tarjeta-->
+        <div class="card">
+            <img src="https://i.ebayimg.com/00/s/MTUwMFgxNTAw/z/25oAAOSwCEBnDdXO/$_57.JPG?set_id=880000500F"
+                alt="Denim Jeans" style="width:100%">
+            <h1>Pin Promo P3R</h1>
+            <p class="price">$20</p>
+            <p>Pin promocional de Persona 3 Reload licenciado de Atlus</p>
+        </div>
+    </div>
+    <!--contenedor del formulario de compra-->
+    <!--
+    <div class="Contenedor_compra">
+        <form class="Compra" id="Compra">
+            <br>
+            <h1 style="justify-self: center;">Carro de compras</h1>
+            <br>
+            <div style="display: flex;">
+            
+                <label for="producto1">Pin P4G (Dejar vacio para no comprar)</label><br>
+            </div>
+            <label for="cantidad_prod1" style="float: left;">Cantidad:</label>
+            
+            <input type="number" id="cantidad_prod1" name="cantidad_prod1" style="float: right;" max="10"
+                min="0"><br><br>
+
+            <div style="display: flex;">
+                <label for="producto2">Pin P5R (Dejar vacio para no comprar)</label><br>
+            </div>
+            <label for="cantidad_prod2" style="float: left;">Cantidad:</label>
+            <input type="number" id="cantidad_prod2" name="cantidad_prod2" style="float: right;" max="10"
+                min="0"><br><br>
+
+            <div style="display: flex;">
+                <label for="producto3">Pin P3R (Dejar vacio para no comprar)</label><br>
+            </div>
+            <label for="cantidad_prod3" style="float: left;">Cantidad:</label>
+            <input type="number" id="cantidad_prod3" name="cantidad_prod3" style="float: right;" max="10"
+                min="0"><br><br>
+            <h1 style="justify-self: center;">Informacion Envio</h1>
+            <label for="nombre" style="float: left;">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" style="float: right;"><br><br>
+
+            <label for="email" style="float: left;">Email:</label>
+            <input type="email" id="email" name="email" style="float: right;"><br><br>
+
+            <label for="Direccion" style="float: left;">Direccion entrega:</label>
+            <input type="text" id="Direccion" name="Direccion" style="float: right;"><br><br>
+
+            <button type="submit" id="Comprar">Comprar</button>
+            <div id="errores"></div>
+
+        </form>
+    </div>
+-->
+
+    <script src="productos.js"></script>
+</body>
+<!--Footer con enlace a la ubicacion y a mi github-->
+<!--Nota no se si quiero que esto este relacionado a mi git....-->
+<footer>
+  <div>
+    <a href="https://github.com/The30thHunter"><img src="https://avatars.githubusercontent.com/u/116296560?v=4" alt="Github del creador" style="width: 10%; padding: 10px;"></a>
+    <a href="https://maps.app.goo.gl/UodVjKwJAEM5aUiW7"><img src="../fotos/mapa.png"
+        alt="Ubicacion" style="width: 12%; padding: 10px;"></a>
+  </div>
+  <div class="enlaces">
+        <a href="https://www.instagram.com/" style="width: 40px; padding-left: 3%; float: left;"><img
+                style="width: 100%; padding-left: 3%;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
+                alt="Logo Instagram"></a>
+        <a style="padding-left: 10%; padding-right: 20%;"></a>
+        <a href="https://www.facebook.com/" style="width: 40px;"><img style="width: 100%;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/960px-Facebook_logo_%28square%29.png"
+                alt="Facebook logo"></a>
+        <a style="padding-left: 10%; padding-right: 20%;"></a>
+        <a href="https://x.com/?lang=es" style="width: 40px; float: right; padding-right: 3%;"><img style="width: 100%;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1200px-Logo_of_Twitter.svg.png"
+                alt="Logo Twitter"></a>
+    </div>
+</footer>
+
+</html>

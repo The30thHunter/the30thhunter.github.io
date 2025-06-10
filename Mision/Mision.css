@@ -1,0 +1,153 @@
+footer {
+  margin: auto;
+  background-color: #5f7387;
+  /* Gris medio azulado */
+  color: white;
+  /* Texto en blanco para contraste */
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  border-top: 2px solid #4c5f70;
+  /* Borde superior más oscuro */
+}
+
+body {
+  margin: auto;
+  background-color: coral;
+}
+
+#Mision,
+#Quienes {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  background-color: transparent;
+  /* Asegura que el fondo no tenga color */
+  color: black;
+  /* Ajusta el color del texto si es necesario */
+
+}
+
+#Mision.active,
+#Quienes.active {
+  opacity: 1;
+  visibility: visible;
+  background-color: transparent;
+  /* Asegura que el fondo no tenga color */
+  color: black;
+  /* Ajusta el color del texto si es necesario */
+
+}
+
+.titulo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Centra horizontalmente */
+  gap: 10px;
+  /* Espacio entre el título y el botón */
+}
+
+#toggleButton {
+  padding: 8px 12px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#toggleButton:hover {
+  background-color: #0056b3;
+}
+
+
+.bloque_izquierda {
+  background-color: aqua;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  width: 40%;
+  padding-right: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  float: left;
+
+}
+
+.bloque_derecha {
+  background-color: aqua;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  width: 40%;
+  padding-right: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  float: right;
+}
+
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.derecha {
+  float: right;
+}
+
+.derecha a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.derecha a:hover {
+  background-color: #111;
+}
+
+.enlaces {
+  display: flex;
+  background-color: ghostwhite;
+  width: 30%;
+  height: 12%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  justify-self: center;
+  border: 3px #111;
+  border-radius: 10px;
+}
