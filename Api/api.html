@@ -8,7 +8,8 @@
     <title>Persona FanClub</title>
 </head>
 
-<body onload="consulta('https://cors-anywhere.herokuapp.com/https://persona-compendium.onrender.com/personas/jack-frost/')">
+<body
+    onload="consulta('https://cors-anywhere.herokuapp.com/https://persona-compendium.onrender.com/personas/jack-frost/')">
     <ul>
         <li><a class="active" href="../index.html">Home</a></li>
         <li><a class="active" href="../Mision/Mision.html">Mision</a></li>
@@ -23,10 +24,14 @@
     <div class="contenedor">
         <h1>Buscador de Personas en la Persona API</h1>
         <p>Ingrese en el buscador el nombre de una persona y presione el boton "Buscar" la persona que este buscando
-            aparecera junto con su informacion y imagen</p>
+            aparecera junto con su informacion y imagen</p><br>
+        <div>
+            <p>Si es la primera vez que ocupa este sitio, se necesita autorizar el uso de la demo de <a
+                    href="https://robwu.nl/cors-anywhere.html" style="color: crimson;">esta</a> Api</p>
+        </div>
         <div class="buscador">
-                <input type="text" id="Buscador" placeholder="Nombre de la persona">
-                <button onclick="actualizarURL()">Buscar</button>
+            <input type="text" id="Buscador" placeholder="Nombre de la persona">
+            <button onclick="actualizarURL()">Buscar</button>
         </div>
         <br>
         <br>

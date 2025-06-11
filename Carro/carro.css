@@ -59,7 +59,7 @@ li a:hover {
   background-color: #111;
 }
 
-.enlaces{
+.enlaces {
   display: flex;
   background-color: ghostwhite;
   width: 30%;
@@ -69,4 +69,112 @@ li a:hover {
   justify-self: center;
   border: 3px #111;
   border-radius: 10px;
+}
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.Carro {
+  background-color: aqua;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 80%;
+  padding-right: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.Bmodal {
+  background-color: #ff2222;
+  /* Naranja intenso para contrastar con aqua */
+  color: white;
+  /* Texto en blanco para mejor legibilidad */
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Bmodal:hover {
+  background-color: #e61919;
+  /* Tonalidad más oscura al pasar el cursor */
+}
+
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

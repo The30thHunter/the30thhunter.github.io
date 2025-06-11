@@ -22,88 +22,47 @@
     </ul>
     <!--Contenedor para ordenar los productos de la primera (y unica) fila-->
     <div class="productos_1">
-        <!--Refencia al style donde se ordena en el formato tarjeta-->
         <div class="card">
             <img src="https://store.udonentertainment.com/cdn/shop/files/P4G_MASCOTPIN_TEDDIE.png?v=1726199944"
-                alt="Denim Jeans" style="width:100%">
-            <h1>Pin Promo P4G</h1>
-            <p class="price">$15</p>
+                alt="Pin P4G" style="width:100%">
+            <h1 id="Name_1">Pin Promo P4G</h1>
+            <p class="price" id="valor_1">$15</p>
             <p>Pin promocional de Persona 4 Golden licenciado de Atlus, distribuido por UDON</p>
+            <button onclick="agregarCarro(1)">Agregar al carrito</button>
         </div>
-        <!--Refencia al style donde se ordena en el formato tarjeta-->
+
         <div class="card">
             <img src="https://totalcards.net/cdn/shop/files/Persona5-RoyalPin.webp?v=1714732649&width=535" alt="Pin P5R"
                 style="width:100%">
-            <h1 id="Nombre">Pin Promo P5R</h1>
-            <p class="price" id="Precio">$19</p>
+            <h1 id="Name_2">Pin Promo P5R</h1>
+            <p id="valor_2" class="price">$19</p>
             <p>Pin promocional de Persona 5 Royal licenciado de Atlus</p>
+            <button onclick="agregarCarro(2)">Agregar al carrito</button>
         </div>
-        <!--Refencia al style donde se ordena en el formato tarjeta-->
+
         <div class="card">
             <img src="https://i.ebayimg.com/00/s/MTUwMFgxNTAw/z/25oAAOSwCEBnDdXO/$_57.JPG?set_id=880000500F"
-                alt="Denim Jeans" style="width:100%">
-            <h1>Pin Promo P3R</h1>
-            <p class="price">$20</p>
+                alt="Pin P3R" style="width:100%">
+            <h1 id="Name_3">Pin Promo P3R</h1>
+            <p id="valor_3" class="price">$20</p>
             <p>Pin promocional de Persona 3 Reload licenciado de Atlus</p>
+            <button onclick="agregarCarro(3)">Agregar al carrito</button>
         </div>
     </div>
-    <!--contenedor del formulario de compra-->
-    <!--
-    <div class="Contenedor_compra">
-        <form class="Compra" id="Compra">
-            <br>
-            <h1 style="justify-self: center;">Carro de compras</h1>
-            <br>
-            <div style="display: flex;">
-            
-                <label for="producto1">Pin P4G (Dejar vacio para no comprar)</label><br>
-            </div>
-            <label for="cantidad_prod1" style="float: left;">Cantidad:</label>
-            
-            <input type="number" id="cantidad_prod1" name="cantidad_prod1" style="float: right;" max="10"
-                min="0"><br><br>
 
-            <div style="display: flex;">
-                <label for="producto2">Pin P5R (Dejar vacio para no comprar)</label><br>
-            </div>
-            <label for="cantidad_prod2" style="float: left;">Cantidad:</label>
-            <input type="number" id="cantidad_prod2" name="cantidad_prod2" style="float: right;" max="10"
-                min="0"><br><br>
-
-            <div style="display: flex;">
-                <label for="producto3">Pin P3R (Dejar vacio para no comprar)</label><br>
-            </div>
-            <label for="cantidad_prod3" style="float: left;">Cantidad:</label>
-            <input type="number" id="cantidad_prod3" name="cantidad_prod3" style="float: right;" max="10"
-                min="0"><br><br>
-            <h1 style="justify-self: center;">Informacion Envio</h1>
-            <label for="nombre" style="float: left;">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" style="float: right;"><br><br>
-
-            <label for="email" style="float: left;">Email:</label>
-            <input type="email" id="email" name="email" style="float: right;"><br><br>
-
-            <label for="Direccion" style="float: left;">Direccion entrega:</label>
-            <input type="text" id="Direccion" name="Direccion" style="float: right;"><br><br>
-
-            <button type="submit" id="Comprar">Comprar</button>
-            <div id="errores"></div>
-
-        </form>
-    </div>
--->
 
     <script src="productos.js"></script>
 </body>
 <!--Footer con enlace a la ubicacion y a mi github-->
 <!--Nota no se si quiero que esto este relacionado a mi git....-->
 <footer>
-  <div>
-    <a href="https://github.com/The30thHunter"><img src="https://avatars.githubusercontent.com/u/116296560?v=4" alt="Github del creador" style="width: 10%; padding: 10px;"></a>
-    <a href="https://maps.app.goo.gl/UodVjKwJAEM5aUiW7"><img src="../fotos/mapa.png"
-        alt="Ubicacion" style="width: 12%; padding: 10px;"></a>
-  </div>
-  <div class="enlaces">
+    <div>
+        <a href="https://github.com/The30thHunter"><img src="https://avatars.githubusercontent.com/u/116296560?v=4"
+                alt="Github del creador" style="width: 10%; padding: 10px;"></a>
+        <a href="https://maps.app.goo.gl/UodVjKwJAEM5aUiW7"><img src="../fotos/mapa.png" alt="Ubicacion"
+                style="width: 12%; padding: 10px;"></a>
+    </div>
+    <div class="enlaces">
         <a href="https://www.instagram.com/" style="width: 40px; padding-left: 3%; float: left;"><img
                 style="width: 100%; padding-left: 3%;"
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"

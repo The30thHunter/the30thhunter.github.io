@@ -1,6 +1,7 @@
 
 //Funcion para consultar a la api tolera errores y cuando la persona deseada no esta disponible, de tener un error se lanza al log de la pagina
 function consulta(apiUrl) {
+    
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
@@ -27,7 +28,7 @@ function comprobarArreglarNombre(nombre) {
     let valido = (regex.test(nombre))
     if (valido) {
         nombre = nombre.toLowerCase().replace(/\s+/g, "-")
-        let url = "https://cors-anywhere.herokuapp.com/"+"https://persona-compendium.onrender.com/personas/" + nombre
+        let url = "https://cors-anywhere.herokuapp.com/https://persona-compendium.onrender.com/personas/" + nombre
         return url
     }
     else {

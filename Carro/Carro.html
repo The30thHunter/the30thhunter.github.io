@@ -8,7 +8,7 @@
     <title>Persona FanClub</title>
 </head>
 
-<body>
+<body onload="actualizarCarrito()">
     <!--Barra navegacion superior-->
     <ul>
         <li><a class="active" href="../index.html">Home</a></li>
@@ -20,20 +20,66 @@
         <li class="derecha"><a class="active" href="../Carro/Carro.html">Carro</a></li>
         <li class="derecha"><img src="../fotos/atlus_logo.png" alt="Icon" style="height: 38px; padding-top: 5px;"></li>
     </ul>
-    <h1>Esta funcion se ha trasladado a la pagina productos, disculpe las molestias</h1>
-    <p>Revisar compra.js para mas informacion</p>
+    <div class="Carro">
+        <h1 style="justify-self: center;">Carro</h1>
+        <p style="justify-self: center;">Y por motivos de stock solo se permite hasta un maximo de 5 unidades por producto en cada compra</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="listaCarrito"></tbody>
+        </table>
 
+
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="Contenedor_compra">
+                <form class="Compra" id="Compra">
+                    <h1 style="justify-self: center;">Formulario de compra</h1>
+                    <h1 style="justify-self: center;">Informacion Envio</h1>
+                    <label for="nombre" style="float: left;">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required style="float: right;"><br><br>
+
+                    <label for="email" style="float: left;">Email:</label>
+                    <input type="email" id="email" name="email" required style="float: right;"><br><br>
+
+                    <label for="Direccion" style="float: left;">Direccion entrega:</label>
+                    <input type="text" id="Direccion" name="Direccion" required style="float: right;"><br><br>
+
+                    <button id="Comprar" type="submit">Comprar</button>
+                    <div id="errores"></div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <script src="compra.js"></script>
 </body>
 <!--Footer con enlace a la ubicacion y a mi github-->
 <!--Nota no se si quiero que esto este relacionado a mi git....-->
 <footer>
-  <div>
-    <a href="https://github.com/The30thHunter"><img src="https://avatars.githubusercontent.com/u/116296560?v=4" alt="Github del creador" style="width: 10%; padding: 10px;"></a>
-    <a href="https://maps.app.goo.gl/UodVjKwJAEM5aUiW7"><img src="../fotos/mapa.png"
-        alt="Ubicacion" style="width: 12%; padding: 10px;"></a>
-  </div>
-  <div class="enlaces">
+    <div>
+        <a href="https://github.com/The30thHunter"><img src="https://avatars.githubusercontent.com/u/116296560?v=4"
+                alt="Github del creador" style="width: 10%; padding: 10px;"></a>
+        <a href="https://maps.app.goo.gl/UodVjKwJAEM5aUiW7"><img src="../fotos/mapa.png" alt="Ubicacion"
+                style="width: 12%; padding: 10px;"></a>
+    </div>
+    <div class="enlaces">
         <a href="https://www.instagram.com/" style="width: 40px; padding-left: 3%; float: left;"><img
                 style="width: 100%; padding-left: 3%;"
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"
