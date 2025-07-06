@@ -4,38 +4,6 @@
   margin-left: 5%;
 }
 
-.enlaces{
-  display: flex;
-  background-color: ghostwhite;
-  width: 30%;
-  height: 12%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  justify-self: center;
-  border: 3px #111;
-  border-radius: 10px;
-}
-
-
-.Contenedor_compra{
-  justify-self: center;
-  width: fit-content;
-  background-color: aqua;
-  height: fit-content;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 1%;
-  padding-bottom: 2%;
-  margin-top: 0%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 5%;
-  display: flex;
-  justify-content: center;
-  border: 3px #111;
-  border-radius: 10px;
-}
-
 .card {
   background-color: whitesmoke;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -50,85 +18,11 @@
   font-size: 22px;
 }
 
+.card button{
+  margin-bottom: 10px;
+  padding: 10px;
+}
 .card button:hover {
-  opacity: 0.7;
+  background-color: #0056b3;
 }
 
-
-footer {
-  margin: auto;
-  background-color: #5f7387;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-size: 16px;
-  border-top: 2px solid #4c5f70;
-}
-
-body {
-  margin: auto;
-  background-color: coral;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
-}
-
-.derecha {
-  float: right;
-}
-
-.derecha a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-
-.derecha a:hover {
-  background-color: #111;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: 0.3s;
-    margin-bottom: 10px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}

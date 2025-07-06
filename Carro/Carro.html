@@ -3,27 +3,38 @@
 
 <head>
     <link rel="stylesheet" href="carro.css">
+    <link rel="stylesheet" href="../Base.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Persona FanClub</title>
-    <link rel="shortcut icon" href="../fotos/Logo.png"/>
+    <link rel="shortcut icon" href="../fotos/Logo.png" />
 </head>
 
 <body onload="actualizarCarrito()">
-    <!--Barra navegacion superior-->
-    <ul>
-        <li><a class="active" href="../index.html">Home</a></li>
-        <li><a class="active" href="../Mision/Mision.html">Mision</a></li>
-        <li><a class="active" href="../Api/api.html">Api</a></li>
-        <li><a class="active" href="../Edad/edad.html">Calculador edad y encriptador</a></li>
-        <li><a class="active" href="../Productos/Prod.html">Productos</a></li>
-        <li><a class="active" href="../Condiciones/Term_Cond.html">Terminos y condiciones</a></li>
-        <li class="derecha"><a class="active" href="../Carro/Carro.html">Carro</a></li>
-        <li class="derecha"><img src="../fotos/atlus_logo.png" alt="Icon" style="height: 38px; padding-top: 5px;"></li>
-    </ul>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <!-- Grupo izquierdo -->
+            <div class="nav-left">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Mision/Mision.html">Misión</a></li>
+                <li><a href="../Api/api.html">API</a></li>
+                <li><a href="../Edad/edad.html">Edad y Encriptador</a></li>
+                <li><a href="../Productos/Prod.html">Productos</a></li>
+                <li><a href="../Condiciones/Term_Cond.html">Términos</a></li>
+            </div>
+
+            <!-- Grupo derecho -->
+            <div class="nav-right">
+                <li><a class="active" href="../Carro/Carro.html">Carro</a></li>
+                <li><img src="../fotos/atlus_logo.png" alt="Icon" class="logo-icon" /></li>
+            </div>
+        </ul>
+    </nav>
+
     <div class="Carro">
         <h1 style="justify-self: center;">Carro</h1>
-        <p style="justify-self: center;">Y por motivos de stock solo se permite hasta un maximo de 5 unidades por producto en cada compra</p>
+        <p style="justify-self: center;">Y por motivos de stock solo se permite hasta un maximo de 5 unidades por
+            producto en cada compra</p>
         <table class="table">
             <thead>
                 <tr>
@@ -57,9 +68,10 @@
 
                     <label for="Direccion" style="float: left;">Direccion entrega:</label>
                     <input type="text" id="Direccion" name="Direccion" required style="float: right;"><br><br>
-
-                    <button id="Comprar" type="submit">Comprar</button>
-                    <div id="errores"></div>
+                    <div style="justify-self: center;">
+                        <button class="boton_modal" id="Comprar" type="submit">Comprar</button><br>
+                        <div id="errores"></div>
+                    </div>
 
                 </form>
             </div>
@@ -72,7 +84,7 @@
     <script src="compra.js"></script>
 </body>
 <!--Footer con enlace a la ubicacion y a mi github-->
-<!--Nota no se si quiero que esto este relacionado a mi git....-->
+<!--Nota no se si quiero que esto este relacionado a mi github....-->
 <footer>
     <div>
         <a href="https://github.com/The30thHunter"><img src="https://avatars.githubusercontent.com/u/116296560?v=4"

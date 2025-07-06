@@ -3,65 +3,6 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    margin: auto;
-    background-color: #5f7387;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 16px;
-    border-top: 2px solid #4c5f70;
-}
-
-body {
-    margin: auto;
-    background-color: coral;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-
-.derecha {
-    float: right;
-}
-
-.derecha a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-
-.derecha a:hover {
-    background-color: #111;
 }
 
 .bloque_izquierda {
@@ -91,16 +32,4 @@ li a:hover {
     padding-top: 1%;
     padding-bottom: 1%;
     float: right;
-}
-
-.enlaces {
-    display: flex;
-    background-color: ghostwhite;
-    width: 30%;
-    height: 12%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    justify-self: center;
-    border: 3px #111;
-    border-radius: 10px;
 }

@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="edad.css">
+    <link rel="stylesheet" href="../Base.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
@@ -12,16 +13,22 @@
 </head>
 
 <body>
-    <ul>
-        <li><a class="active" href="../index.html">Home</a></li>
-        <li><a class="active" href="../Mision/Mision.html">Mision</a></li>
-        <li><a class="active" href="../Api/api.html">Api</a></li>
-        <li><a class="active" href="../Edad/edad.html">Calculador edad y encriptador</a></li>
-        <li><a class="active" href="../Productos/Prod.html">Productos</a></li>
-        <li><a class="active" href="../Condiciones/Term_Cond.html">Terminos y condiciones</a></li>
-        <li class="derecha"><a class="active" href="../Carro/Carro.html">Carro</a></li>
-        <li class="derecha"><img src="../fotos/atlus_logo.png" alt="Icon" style="height: 38px; padding-top: 5px;"></li>
-    </ul>
+<nav class="navbar">
+        <ul class="nav-list">
+            <div class="nav-left">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Mision/Mision.html">Misión</a></li>
+                <li><a href="../Api/api.html">API</a></li>
+                <li><a class="active" href="../Edad/edad.html">Edad y Encriptador</a></li>
+                <li><a href="../Productos/Prod.html">Productos</a></li>
+                <li><a href="../Condiciones/Term_Cond.html">Términos</a></li>
+            </div>
+            <div class="nav-right">
+                <li><a href="../Carro/Carro.html">Carro</a></li>
+                <li><img src="../fotos/atlus_logo.png" alt="Icon" class="logo-icon" /></li>
+            </div>
+        </ul>
+    </nav>
 
 
     <div style="display: flex; width: 100%;">
