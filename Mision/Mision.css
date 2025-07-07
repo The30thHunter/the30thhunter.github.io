@@ -48,7 +48,7 @@
 
 
 .bloque_izquierda {
-  background-color: aqua;
+  background-color: #0db2f3;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 3%;
@@ -63,7 +63,7 @@
 }
 
 .bloque_derecha {
-  background-color: aqua;
+  background-color: #0db2f3;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 3%;
@@ -91,7 +91,6 @@
 .derecha a:hover {
   background-color: #111;
 }
-
 footer {
     position: fixed;
     bottom: 0;

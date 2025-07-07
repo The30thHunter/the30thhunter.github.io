@@ -1,7 +1,7 @@
 /* Fondo general */
 body {
   margin: auto;
-  background-color: #6d9ac7;
+  background-color: #1883df;
   color: #1C1C1C;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -63,6 +63,7 @@ body {
 }
 
 /* Footer */
+
 footer {
   margin: auto;
   background-color: #005A9C;
@@ -73,12 +74,11 @@ footer {
   border-top: 2px solid #004080;
 }
 
-/* Enlaces sociales */
 .enlaces {
   display: flex;
   background-color: #ffffff;
-  width: 30%;
   height: auto;
+  width: fit-content;
   padding: 1%;
   justify-content: center;
   border-radius: 10px;
@@ -88,7 +88,7 @@ footer {
 
 /* Contenedor principal compartido */
 .contenedor-principal {
-  background-color: #51eefc;
+  background-color: #0db2f3;
   margin: 3% auto;
   width: 90%;
   padding: 2%;
@@ -109,4 +109,18 @@ button {
 
 button:hover {
   background-color: #005A9C;
+}
+.social-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+.footer-icon {
+  width: 10%;
+  padding: 10px;
 }
